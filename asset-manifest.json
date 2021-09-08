@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/Responsive-Web/static/css/main.07f5404f.chunk.css",
+    "main.js": "/Responsive-Web/static/js/main.00053c81.chunk.js",
+    "main.js.map": "/Responsive-Web/static/js/main.00053c81.chunk.js.map",
+    "runtime-main.js": "/Responsive-Web/static/js/runtime-main.f603b0a6.js",
+    "runtime-main.js.map": "/Responsive-Web/static/js/runtime-main.f603b0a6.js.map",
+    "static/js/2.7b1fd484.chunk.js": "/Responsive-Web/static/js/2.7b1fd484.chunk.js",
+    "static/js/2.7b1fd484.chunk.js.map": "/Responsive-Web/static/js/2.7b1fd484.chunk.js.map",
+    "static/js/3.32cf4489.chunk.js": "/Responsive-Web/static/js/3.32cf4489.chunk.js",
+    "static/js/3.32cf4489.chunk.js.map": "/Responsive-Web/static/js/3.32cf4489.chunk.js.map",
+    "index.html": "/Responsive-Web/index.html",
+    "static/css/main.07f5404f.chunk.css.map": "/Responsive-Web/static/css/main.07f5404f.chunk.css.map",
+    "static/js/2.7b1fd484.chunk.js.LICENSE.txt": "/Responsive-Web/static/js/2.7b1fd484.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/Responsive-Web/static/media/BankGothic Regular.4108e236.ttf",
+    "static/media/denim_jeans.2a8c5994.jpg": "/Responsive-Web/static/media/denim_jeans.2a8c5994.jpg",
+    "static/media/hero_image.53cc0889.jpg": "/Responsive-Web/static/media/hero_image.53cc0889.jpg",
+    "static/media/image1.137092ec.jpg": "/Responsive-Web/static/media/image1.137092ec.jpg",
+    "static/media/image2.73c5b920.jpg": "/Responsive-Web/static/media/image2.73c5b920.jpg",
+    "static/media/myorders.3e66eaf8.png": "/Responsive-Web/static/media/myorders.3e66eaf8.png",
+    "static/media/profile.75f64580.png": "/Responsive-Web/static/media/profile.75f64580.png",
+    "static/media/subscribe_bg.f00351f8.png": "/Responsive-Web/static/media/subscribe_bg.f00351f8.png",
+    "static/media/testimonial_card.f406da77.jpg": "/Responsive-Web/static/media/testimonial_card.f406da77.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f603b0a6.js",
+    "static/js/2.7b1fd484.chunk.js",
+    "static/css/main.07f5404f.chunk.css",
+    "static/js/main.00053c81.chunk.js"
+  ]
+}
