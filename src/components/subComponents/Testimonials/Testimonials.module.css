@@ -1,0 +1,17 @@
+.Testimonials{
+    height: 356px;
+    padding: 50px 60px 89px 60px;
+    background-color: #F9F9F9;
+}
+
+.Testimonials .Heading{
+    font-family: BankGothic, sans-serif;
+    font-size: 24px;
+    text-align: center;
+    margin: 0 0 25px 0;
+}
+
+.Testimonials .Cards{
+    display: flex;
+    justify-content: space-between;
+}

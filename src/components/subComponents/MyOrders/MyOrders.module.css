@@ -1,0 +1,93 @@
+.MyOrders{
+    width: 784px;
+    color: #777777;
+    box-sizing: border-box;
+    padding: 17px 30px;
+}
+
+.MyOrders *{
+    box-sizing: border-box;
+}
+
+.MyOrders p{
+    padding: 0;
+    margin: 0;
+}
+
+.Title{
+    margin: 16px 0 28px 5px;
+    padding: 0;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.Order{
+    position: relative;
+    height: 132px;
+    margin: 0 10px 29px 0;
+    border-bottom: 1px solid #DDDDDD;
+    padding-top: 1px;
+    padding-bottom: 29px;
+    display: flex;
+}
+
+.Order img{
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    background-color: #DDDDDD;
+    object-fit: cover;
+    object-position: top;
+}
+
+.OrderDetails{
+    height: 100%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 2;
+}
+
+.OrderDetails p:nth-of-type(2){
+    font-size: 16px;
+    font-weight: 600;
+    color: #333333;
+}
+
+.Status{
+    position: absolute;
+    border-radius: 6px 6px 0px 0px;
+    bottom: 0px;
+    right: 3px;
+    box-sizing: content-box;
+    padding: 2px 20px 2px 16px;
+}
+
+.Pending{
+    background: #333333;
+    color: #FFFFFF;
+}
+
+.Delivered{
+    background-color: #F3F3F3;
+    color: #777777;
+}
+
+.PaymentDetails{
+    text-align: right;
+    margin-right: 9px;
+}
+
+.PaymentDetails p:nth-of-type(2){
+    font-size: 20px;
+    font-weight: 500;
+    color: #333333;
+    margin: 10px 2px 20px 0;
+}
+
+.PaymentDetails svg{
+    transform: rotate(90deg);
+    width: 12px;
+    margin-right: 7px;
+}

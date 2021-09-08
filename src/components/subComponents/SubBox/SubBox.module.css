@@ -1,0 +1,43 @@
+.SubBox{
+    height: 740px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.SubBox section{
+    width: 635px;
+}
+
+.SubBox div{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.SubBox .InnerBox1, .InnerBox2 section{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 50% left 0px;
+}
+
+/* .InnerBox1 div{
+    width: 189px;
+    height: 83px;
+} */
+
+.SubBox div p{
+    /* width: 176px; */
+    width: max-content;
+    box-sizing: content-box;
+    padding: 5px;
+    margin: auto;
+    margin-bottom: 5px;
+}
+
+.InnerBox2 section{
+    height: 365px;
+    margin-bottom: 10px;
+}

@@ -1,0 +1,51 @@
+.Header{
+    height: 70px;
+    width: 1280px;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #DDDDDD;
+    box-sizing: border-box;
+    padding: 0 53px;
+    color: #444444;
+}
+
+.Header *{
+    box-sizing: border-box;
+}
+
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    /* flex-grow: 2; */
+    width: 1124px;
+}
+
+.Navbar a{
+    color: #444444;
+}
+
+.Navbar a:hover, .Navbar a.active{
+    color: red;
+}
+
+.Navbar section{
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid black; */
+}
+
+.NavLinks{
+    margin: 20px 80px;
+    flex-grow: 3;
+}
+
+.Options{
+    flex-grow: 1;
+    margin: 20px 20px;
+}
+
+.Menu{
+    cursor: pointer;
+}

@@ -1,0 +1,93 @@
+.Profile *{
+    box-sizing: border-box;
+}
+
+.Profile{
+    width: 100%;
+    height: 1002px;
+    position: relative;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 34px 0 0 0;
+}
+
+.PageName{
+    font-size: 12px;
+    color: #777777;
+    margin: 0 auto auto 60px;
+}
+
+.Box1{
+    display: flex;
+    width: 272px;
+    height: 72px;
+    margin-top: 60px;
+    margin-left: 67px;
+    align-items: center;
+}
+
+.Box1 img{
+    display: inline;
+    width: 72px;
+    border-radius: 50px;
+}
+
+.Box1 p{
+    color: #9B9B9B;
+    margin-left: 20px;
+}
+
+.Box1 p span:nth-child(1){
+    font-size: 16px;
+    color: #333333;
+}
+
+.Box2{
+    width: 301px;
+    height: 176px;
+    margin-top: 50px;
+    margin-left: 75px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Box2 hr{
+    border: none;
+    box-sizing: border-box;
+    margin: 10px 0 0 0;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.SelectedOption{
+    position: absolute;
+    top: 123px;
+    left: 379px;
+    border: 1px solid #333333;
+}
+
+.OptionCard{
+    cursor: pointer;
+}
+
+.InnerCard{
+    display: flex;
+}
+
+.OptionCard .InnerCard div:nth-of-type(1){
+    width: 147px;
+    margin-right: 20px;
+}
+
+.OptionCard .InnerCard div span:nth-of-type(1){
+    color: #222222;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.OptionCard .InnerCard div span:nth-of-type(2){
+    color: #9B9B9B;
+    font-size: 11px;
+    font-weight: 500;
+}

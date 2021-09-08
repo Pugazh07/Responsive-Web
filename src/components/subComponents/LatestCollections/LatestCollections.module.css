@@ -1,0 +1,51 @@
+.LatestCollections{
+    padding: 61px 60px 51px 60px;
+    height: 554px;
+}
+
+.LatestCollections .Heading{
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    font-size: 20px;
+    margin-bottom: 43px;
+}
+
+.LatestCollections hr{
+    border: none;
+    border-bottom: 2px solid #dddddd;
+    color: #dddddd;
+    flex-grow: 2;
+}
+
+.LatestCollections .Heading p{
+    font-family: BankGothic;
+    margin: 0 12px;
+}
+
+.LatestCollection{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    
+}
+
+.LatestCollection div{
+    width: 222px;
+    height: 378px;
+}
+
+.LatestCollection img{
+    width: 222px;
+    height: 318px;
+    margin-bottom: 15px;
+}
+
+.LatestCollection div p{
+    margin: 0;
+    padding: 0;
+}
+
+.LatestCollection div p:nth-child(3){
+    font-size: 13px;
+}

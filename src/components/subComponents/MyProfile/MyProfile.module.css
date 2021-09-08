@@ -1,0 +1,54 @@
+.MyProfile{
+    width: 784px;
+    height: 530px;
+    box-sizing: border-box;
+    padding: 36px 53px 123px 54px;
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+}
+
+.MyProfile *{
+    box-sizing: border-box;
+}
+
+.Title{
+    font-size: 24px;
+    margin: 0;
+    line-height: 34.68px;
+}
+
+.MyProfile input{
+    height: 45px;
+    font-size: 14px;
+    color: #333333;
+    border: 1px solid #D1D1D1;
+    width: 100%;
+    padding: 11px 19px;
+}
+
+.MyProfile form{
+    margin-top: 31px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-between;
+}
+
+.Name{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Name input{
+    width: 327.58px;
+}
+
+.MyProfile form button{
+    width: 240px;
+    height: 50px;
+    border: none;
+    background-color: #333333;
+    color: #ffffff;
+    margin: 10px 0 0 0;
+    padding: 0;
+    align-self: flex-end;
+}
