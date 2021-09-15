@@ -7,8 +7,8 @@
 }
 
 .Close {
-    /* transform: translateX(+100%); */
-    display: none !important;
+    transform: translateX(+100%);
+    /* display: none !important; */
 }
 
 @media (max-width: 768px) {

@@ -25,7 +25,7 @@ const SideDrawer = ({show, clicked, selectMenuHandler}) =>{
         sideDrawerClass=[styles.SideDrawer, styles.Open];
     }
     return<section className={sideDrawerClass.join(' ')}>
-        <i onClick={clicked} tabIndex="0" onKeyPress={(e)=>{
+        <i onClick={clicked} tabIndex={show ? "0" : "-1"} onKeyPress={(e)=>{
             e.stopPropagation();
             switch (e.key){
                 case "Enter":
@@ -39,7 +39,7 @@ const SideDrawer = ({show, clicked, selectMenuHandler}) =>{
             <div className={styles.Box1}>
                 {
                     menu.options1.map(element => <li key={element.id} className={element.className} onClick={(e)=>selectMenuHandler(e, 'option', element.id)}>
-                        <a href='#'>{element.name}</a>
+                        <a href='#' tabIndex={show ? "0" : "-1"}>{element.name}</a>
                     </li>)
                 }
             </div>
@@ -47,7 +47,7 @@ const SideDrawer = ({show, clicked, selectMenuHandler}) =>{
             <div className={styles.Box2}>
                 {
                     menu.options2.map(element => <li key={element.id} className={element.className} onClick={(e)=>selectMenuHandler(e, 'link', element.id)}>
-                        <a href='#'>{element.name}</a>
+                        <a href='#' tabIndex={show ? "0" : "-1"}>{element.name}</a>
                     </li>)
                 }
             </div>

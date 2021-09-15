@@ -15,7 +15,7 @@ export const LatestCollections = () =>{
         
         <section className={styles.LatestCollection}>
         {[1,2,3,4,5].map((i) => {
-            return <div key={i}>
+            return <div key={i} tabIndex="0">
                 <img src={i%2 !== 0 ? DenimJeans : HeroImage} alt={i%2 !== 0 ? 'DenimJeans' : 'HeroImage'}/>
                 <p>Printed Polo T-Shirt</p>
                 <p><span className='Red'>&#8377;1,499.00</span></p>

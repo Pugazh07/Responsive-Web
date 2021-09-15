@@ -56,4 +56,11 @@
     .LatestCollections{
         padding: 51px 20px;
     }
+    .LatestCollection{
+        overflow: scroll;
+        scroll-behavior: smooth;
+    }
+    .LatestCollection::-webkit-scrollbar{
+        display: none;
+    }
 }

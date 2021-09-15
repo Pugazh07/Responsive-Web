@@ -2,7 +2,6 @@
     height: 360px;
     padding: 50px 60px 89px 60px;
     background-color: #F9F9F9;
-    overflow-x: hidden;
 }
 
 .Testimonials .Heading{
@@ -25,7 +24,11 @@
         padding-bottom: 93px;
     }
     .Cards{
-        overflow-x: hidden;
+        overflow: scroll;
+        scroll-behavior: smooth;
+    }
+    .Cards::-webkit-scrollbar{
+        display: none;
     }
 }
 
