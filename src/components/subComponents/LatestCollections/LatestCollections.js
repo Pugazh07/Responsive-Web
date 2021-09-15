@@ -9,7 +9,7 @@ export const LatestCollections = () =>{
     return <section className={styles.LatestCollections}>
         <div className={styles.Heading}>
         <hr/>
-            <p>lATEST COLLECTIONS</p>
+            <p tabIndex="0">lATEST COLLECTIONS</p>
         <hr/>
         </div>
         

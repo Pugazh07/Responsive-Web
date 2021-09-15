@@ -2,7 +2,7 @@ import React from "react";
 
 import styles from './MyProfile.module.css'
 
-const MyProfile = () => {
+export const MyProfile = () => {
     return <section className={styles.MyProfile}>
         <p className={styles.Title}>My Profile</p>
         <form>
@@ -18,5 +18,3 @@ const MyProfile = () => {
         </form>
     </section>
 }
-
-export default MyProfile

@@ -1,6 +1,7 @@
 .Header{
     height: 70px;
-    width: 1280px;
+    /* width: 1280px; */
+    width: 100%;
     display: flex;
     justify-content: space-between;
     border-bottom: 1px solid #DDDDDD;
@@ -13,12 +14,26 @@
     box-sizing: border-box;
 }
 
+.Logo{
+    box-sizing: border-box;
+    font-family: 'scada', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #E10000;
+    width: 103px;
+    height: 70px;
+    padding: 15px 0 55px 0;
+    text-align: center;
+}
+
 .Navbar{
     display: flex;
     justify-content: space-between;
     box-sizing: border-box;
-    /* flex-grow: 2; */
-    width: 1124px;
+    flex-grow: 2;
+    /* width: 1124px; */
+    align-items: center;
 }
 
 .Navbar a{
@@ -36,16 +51,146 @@
     /* border: 1px solid black; */
 }
 
+.Links{
+    width: 100%;
+}
+
 .NavLinks{
     margin: 20px 80px;
     flex-grow: 3;
+    align-items: center;
+}
+
+.NavLinks img, .RightChevron, .LeftChevron{
+    display: none;
 }
 
 .Options{
     flex-grow: 1;
-    margin: 20px 20px;
+    margin: 20px;
 }
 
 .Menu{
     cursor: pointer;
+}
+
+@media(max-width: 768px){
+    .Header{
+        padding: 0 44px;
+        /* margin-bottom: 160px; */
+        position: relative;
+    }
+    .Navbar{
+        flex-grow: 1;
+        justify-content: flex-end;
+    }
+    .NavLinks{
+        margin: 0;
+        padding: 0 44px;
+        position: absolute;
+        top: 100px;
+        left: 0px;
+        /* transform: translate(-50%); */
+        text-align: center;
+        font-size: 12px;
+        width: 100%;
+    }
+    .Override{
+        display: none !important;
+    }
+    .Disabled path{
+        fill: #DDDDDD;
+    }
+    .Links{
+        overflow: scroll;
+        width: 600px;
+        white-space: nowrap;
+    }
+    .Links::-webkit-scrollbar{
+        display: none;
+    }
+    .Links img{
+        display: block;
+        width: 76px;
+        height: 76px;
+        border-radius: 50%;
+        object-fit: contain;
+    }
+    .Links li{
+        margin: 0 44px 0 0;
+    }
+    .RightChevron, .LeftChevron{
+        display: inline;
+        font-size: 20px;
+        background: none;
+        border: none;
+    }
+    .LeftChevron{
+        transform: rotate(-180deg);
+        margin-right: 51px;
+    }
+    .Navbar a{
+        color: #777777;
+    }
+    .Options{
+        flex-grow: 0;
+        width: 104.27px;
+        margin: 18.96px 0;
+    }
+    .Options li svg{
+        width: 32.08px;
+        height: 32.08px;
+    }
+    .Favorite, .Person{
+        display: none;
+    }
+    .Navbar a:hover, .Navbar a.active{
+        color: #333333;
+    }
+    .activeImg{
+        border: 1px solid #E10000;
+    }
+}
+
+@media ( max-width: 360px){
+    .Header{
+        height: 48px;
+        padding: 0 16px 0 21px;
+    }
+    .Logo{
+        width: 77px;
+        height: 48px;
+        font-size: 14px;
+        padding: 7.26px 0 23.26px 0;
+    }
+    .NavLinks{
+        padding: 0 10px;
+        top: 60px;
+    }
+    .Links{
+        width: 300px;
+    }
+    .Links img{
+        width: 38px;
+        height: 38px;
+    }
+    .Links li{
+        margin: 0 22px 0 0;
+    }
+    .RightChevron svg, .LeftChevron svg{
+        width: 7px;
+        height: 13px;
+    }
+    .LeftChevron{
+        margin-right: 25px;
+    }
+    .Options{
+        flex-grow: 0;
+        width: 71.5px;
+        margin: 13px 0;
+    }
+    .Options li svg{
+        width: 22px;
+        height: 22px;
+    }
 }

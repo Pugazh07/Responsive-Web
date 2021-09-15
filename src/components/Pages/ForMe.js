@@ -1,13 +1,13 @@
 import React from 'react';
 
-import { Hero, SubBox, LatestCollections, Testimonials, Subscribe } from '../subComponents';
+import { Cover, SubBox, LatestCollections, Testimonials, Subscribe } from '../subComponents';
 
 import styles from './css/ForMe.module.css';
 
 export const ForMe=()=>{
     
     return<main className={styles.ForMe}>
-        <Hero />
+        <Cover />
         <SubBox />
         <LatestCollections />
         <Testimonials />

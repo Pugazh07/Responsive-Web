@@ -1,7 +1,8 @@
 .Testimonials{
-    height: 356px;
+    height: 360px;
     padding: 50px 60px 89px 60px;
     background-color: #F9F9F9;
+    overflow-x: hidden;
 }
 
 .Testimonials .Heading{
@@ -14,4 +15,23 @@
 .Testimonials .Cards{
     display: flex;
     justify-content: space-between;
+}
+
+@media(max-width: 768px){
+    .Testimonials{
+        height: 380px;
+        padding-left: 64px;
+        padding-right: 69px;
+        padding-bottom: 93px;
+    }
+    .Cards{
+        overflow-x: hidden;
+    }
+}
+
+@media(max-width: 360px){
+    .Testimonials{
+        padding-left: 31px;
+        padding-right: 30px;
+    }
 }

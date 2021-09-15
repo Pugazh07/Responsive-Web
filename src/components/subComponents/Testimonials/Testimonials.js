@@ -7,7 +7,7 @@ import styles from './Testimonials.module.css'
 
 export const Testimonials = () => {
     return <section className={styles.Testimonials}>
-        <p className={styles.Heading}>Testimonials</p>
+        <p className={styles.Heading} tabIndex="0">Testimonials</p>
         <section className={styles.Cards}>
         {[1,2,3].map((ele)=>{
             return <Card key={ele} className={styles.Card} image={cardImage}/>

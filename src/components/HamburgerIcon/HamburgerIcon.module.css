@@ -1,0 +1,30 @@
+.HamburgerIcon{
+    display: none;
+}
+
+@media(max-width: 768px){
+    .HamburgerIcon{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 29.17px;
+        height: 21.88px;
+        align-self: center;
+        margin-left: 48.85px;
+    }
+    
+    .HamburgerIcon div{
+        border: 1px solid #333333;
+        height: 2px;
+        background-color: #333333;
+        border-radius: 4px;
+    }
+}
+
+@media(max-width: 360px){
+    .HamburgerIcon{
+        width: 20px;
+        height: 15px;
+        margin-left: 33.5px;
+    }
+}

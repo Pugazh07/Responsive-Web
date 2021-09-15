@@ -1,5 +1,5 @@
 .SubBox{
-    height: 740px;
+    /* height: 740px; */
     display: flex;
     justify-content: space-between;
     font-size: 20px;
@@ -9,24 +9,24 @@
     width: 635px;
 }
 
+.InnerBox1, .InnerBox2 section{
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 50% left 0px;
+    margin-bottom: 10px;
+}
+
+.InnerBox1{
+    height: 740px;
+}
+
 .SubBox div{
     position: absolute;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
 }
-
-.SubBox .InnerBox1, .InnerBox2 section{
-    position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: top 50% left 0px;
-}
-
-/* .InnerBox1 div{
-    width: 189px;
-    height: 83px;
-} */
 
 .SubBox div p{
     /* width: 176px; */
@@ -39,5 +39,28 @@
 
 .InnerBox2 section{
     height: 365px;
-    margin-bottom: 10px;
+}
+
+@media(max-width: 768px){
+    .SubBox{
+        flex-direction: column;
+    }
+
+    .SubBox section{
+        width: 100%;
+    }
+
+    .InnerBox1{
+        height: 515.73px;
+    }
+
+    .InnerBox2 section{
+        height: 533.33px;
+    }
+}
+
+@media(max-width: 768px){
+    .InnerBox2 section{
+        height: 250px;
+    }
 }

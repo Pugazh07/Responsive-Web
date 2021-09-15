@@ -71,8 +71,17 @@ export const Phone= () =>(
 </svg>
 )
 
-export const Shevron = () => (
+export const Chevron = (props) => {
+    console.log(props)
+    return(
     <svg width="7" height="11" viewBox="0 0 7 11" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M1.125 9.5L5.125 5.32609L1.125 1.15217" stroke="#333333" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+</svg>
+)
+}
+
+export const Hamburger = () => (
+    <svg width="20" height="15" viewBox="0 0 20 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M0 14.375C0 14.0298 0.282726 13.75 0.620492 13.75H19.3795C19.7222 13.75 20 14.0274 20 14.375C20 14.7202 19.7173 15 19.3795 15H0.620492C0.277804 15 0 14.7226 0 14.375ZM0 7.5C0 7.15482 0.282726 6.875 0.620492 6.875H19.3795C19.7222 6.875 20 7.15242 20 7.5C20 7.84518 19.7173 8.125 19.3795 8.125H0.620492C0.277804 8.125 0 7.84758 0 7.5ZM0 0.625C0 0.279822 0.282726 0 0.620492 0H19.3795C19.7222 0 20 0.277416 20 0.625C20 0.970178 19.7173 1.25 19.3795 1.25H0.620492C0.277804 1.25 0 0.972584 0 0.625Z" fill="#333333"/>
 </svg>
 )

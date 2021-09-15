@@ -1,0 +1,51 @@
+.Cover{
+    margin:  0 0 7px 7px;
+    padding: 0 0 0 7px;
+    position: relative;
+    max-width: 1280px;
+    height: 680px;
+    background-repeat: no-repeat;
+    background-position: top 20% left 0px;
+    background-size: cover;
+}
+
+.Cover div{
+    position: absolute;
+    left: 50%;
+    top: 326px;
+    width: 182px;
+    height: 88px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transform: translate(-50%);
+}
+
+.Cover button{
+    position: absolute;
+    width: 240px;
+    height: 50px;
+    left: 50%;
+    bottom: 128px;
+    font-size: 16px;
+    transform: translate(-50%);
+}
+
+@media(max-width: 768px){
+    .Cover{
+        margin: 0 0 8px 0;
+        height: 642px;
+    }
+    .Cover div{
+        top: 247px;
+    }
+    .Cover button{
+        bottom: 149px;
+    }
+}
+
+@media(max-width: 360px){
+    .Cover{
+        background-position: center;
+    }
+}

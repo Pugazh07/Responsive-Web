@@ -2,7 +2,8 @@
     height: 360px;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top 50% left 0;
+    /* background-position: top 50% left 0; */
+    background-position: center;
 }
 
 .Subscribe section{
@@ -12,7 +13,7 @@
     color: #ffffff;
 }
 
-.Subscribe section div:nth-child(1){
+.Subscribe section div{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -20,34 +21,39 @@
     text-align: center;
 }
 
-.Subscribe section div:nth-child(1) p:nth-child(1){
+.Subscribe section div p:nth-of-type(1) br{
+    display: none;
+}
+
+.Subscribe section div p:nth-of-type(1){
     font-size: 24px;
     font-weight: bold;
     margin: 5.5px 0 16.5px 0;
 }
-.Subscribe section div:nth-child(1) p:nth-child(2){
+.Subscribe section div p:nth-of-type(2){
     font-size: 20px;
     margin: 4.5px 0 31.5px 0;
 }
-.Subscribe .SubscribeForm *{
+.SubscribeForm *{
     height: 40px;
 }
 
-.Subscribe .SubscribeForm input{
+.SubscribeForm input{
     border-color: none;
     width: 360px;
     margin-right: 10px;
+    padding: 10px;
 }
-.Subscribe .SubscribeForm button{
+.SubscribeForm button{
     width: 125px;
 }
-.Subscribe section .Locate{
+.Locate{
     box-sizing: border-box;
     position: absolute;
     width: 160px;
     height: 40px;
-    left: 932px;
-    top: 320px;
+    bottom: 0;
+    right: 188px;
     background: #222222;
     box-shadow: 6px 0px 20px rgba(0, 0, 0, 0.25);
     border-radius: 6px 6px 0px 0px;
@@ -55,4 +61,36 @@
     margin: 0;
     text-align: center;
     padding: 11px 0;
+}
+
+@media(max-width: 768px){
+    .Subscribe{
+        height: 420px;
+    }
+    .SubscribeForm{
+        box-sizing: border-box;
+        width: 300px;
+        height: 94.32px;
+        margin: 0 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .SubscribeForm input, .SubscribeForm button{
+        width: 100%;
+        margin: 0;
+    }
+    .Locate{
+        left: 50%;
+        transform: translate(-50%);
+    }
+}
+
+@media(max-width: 360px){
+    .Subscribe section div p:nth-of-type(1) br{
+        display: inline;
+    }
+    .Subscribe section div p:nth-of-type(1){
+        height: 76px;
+    }
 }

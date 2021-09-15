@@ -17,9 +17,9 @@ const Footer = () => {
             <Logo />
             <p>Stay in touch with us</p>
             <div className={styles.Icons}>
-                <Facebook />
-                <Insta />
-                <Youtube />
+                <a href="#"><Facebook /></a>
+                <a href="#"><Insta /></a>
+                <a href="#"><Youtube /></a>
             </div>
         </section>
         <section className={styles.Contact}>

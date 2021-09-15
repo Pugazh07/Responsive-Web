@@ -52,3 +52,51 @@
     padding: 0;
     align-self: flex-end;
 }
+
+@media(max-width: 768px){
+    .MyProfile{
+        width: 482px;
+        height: 516px;
+        padding: 17px 29px 144px 25px;
+    }
+    .MyProfile input{
+        height: 40px;
+        /* padding: 11px 19px; */
+    }
+    .Name input{
+        width: 207.1px;
+    }
+    .MyProfile form button{
+        align-self: center;
+    }
+}
+
+@media(max-width: 360px){
+    .MyProfile{
+        width: 100%;
+        height: 409.57px;
+        padding: 0;
+        margin-bottom: 43px;
+    }
+    .MyProfile input{
+        height: 43.95px;
+    }
+    .Name{
+        flex-direction: column;
+        height: 104px;
+    }
+    .Name input{
+        width: 100%;
+    }
+    .Title{
+        display: none;
+    }
+    .MyProfile form{
+        margin-top: 20px;
+    }
+    .MyProfile form button{
+        height: 48px;
+        margin: 0;
+        width: 100%;
+    }
+}

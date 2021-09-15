@@ -1,6 +1,7 @@
 .LatestCollections{
-    padding: 61px 60px 51px 60px;
+    padding: 51px 60px 51px 60px;
     height: 554px;
+    overflow-x: hidden;
 }
 
 .LatestCollections .Heading{
@@ -33,6 +34,7 @@
 .LatestCollection div{
     width: 222px;
     height: 378px;
+    margin-right: 10px;
 }
 
 .LatestCollection img{
@@ -48,4 +50,10 @@
 
 .LatestCollection div p:nth-child(3){
     font-size: 13px;
+}
+
+@media(max-width: 768px){
+    .LatestCollections{
+        padding: 51px 20px;
+    }
 }
