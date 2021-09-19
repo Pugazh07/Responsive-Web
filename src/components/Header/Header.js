@@ -6,7 +6,7 @@ import HamburgerIcon from '../HamburgerIcon/HamburgerIcon';
 
 import styles from './Header.module.css';
 
-const Header = ({menu, selectedMenu, selectMenuHandler, clicked}) =>{
+const Header = ({menu, selectedMenu, selectMenuHandler, clicked, showNotification}) =>{
     console.log(window.innerWidth)
     const [tabPos, setTabPos]=useState(1)
     const tabRef=useRef();
@@ -31,7 +31,7 @@ const Header = ({menu, selectedMenu, selectMenuHandler, clicked}) =>{
     return<header className={styles.Header}>
         <section className={styles.Logo}><span>MADE UP</span></section>
         <nav className={styles.Navbar}>
-            <section className={styles.NavLinks+' '+ (selectedMenu.type === 'link' ? null : styles.Override)}>
+            <section className={styles.NavLinks+' '+ (selectedMenu.type === 'link' ? null : styles.Override)+' '+(showNotification? styles.NewPosTop : null)}>
                 <button disabled={!(tabPos >1)} className={tabPos >1 ? styles.LeftChevron : styles.LeftChevron + ' '+ styles.Disabled} onClick={()=>{
                     if(tabPos > 1){
                         tabRef.current.scrollBy({
@@ -64,6 +64,7 @@ const Header = ({menu, selectedMenu, selectMenuHandler, clicked}) =>{
                 {options}
             </section>
             <HamburgerIcon clicked={clicked} />
+            
         </nav>
     </header>
 }

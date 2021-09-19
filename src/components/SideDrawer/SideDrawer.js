@@ -39,7 +39,7 @@ const SideDrawer = ({show, clicked, selectMenuHandler}) =>{
             <div className={styles.Box1}>
                 {
                     menu.options1.map(element => <li key={element.id} className={element.className} onClick={(e)=>selectMenuHandler(e, 'option', element.id)}>
-                        <a href='#' tabIndex={show ? "0" : "-1"}>{element.name}</a>
+                        <a href='#menu' tabIndex={show ? "0" : "-1"}>{element.name}</a>
                     </li>)
                 }
             </div>
@@ -47,7 +47,7 @@ const SideDrawer = ({show, clicked, selectMenuHandler}) =>{
             <div className={styles.Box2}>
                 {
                     menu.options2.map(element => <li key={element.id} className={element.className} onClick={(e)=>selectMenuHandler(e, 'link', element.id)}>
-                        <a href='#' tabIndex={show ? "0" : "-1"}>{element.name}</a>
+                        <a href='#menu' tabIndex={show ? "0" : "-1"}>{element.name}</a>
                     </li>)
                 }
             </div>

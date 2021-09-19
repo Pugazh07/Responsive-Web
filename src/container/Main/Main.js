@@ -9,6 +9,8 @@ import tshirticon from '../../assets/images/t-shirt.png';
 import shirticon from '../../assets/images/shirt.png';
 import trousersicon from '../../assets/images/trousers.png';
 import SideDrawer from '../../components/SideDrawer/SideDrawer';
+import NotificationBar from '../../components/NotificationBar/NotificationBar';
+import { useSessionStorage } from '../../assets/CustomHooks/useSessionStorage';
 
 const menu ={
     links: [
@@ -26,6 +28,14 @@ const menu ={
 const Main = () =>{
     const [selectedMenu, setSelectedMenu] = useState({type: 'link', id: 1})
     const [showSideDrawer, setShowSideDrawer] = useState(false);
+    const [showNotification, setShowNotification]=useSessionStorage(true);
+
+    const showNotificationHandler=()=>{
+        console.log("clicked")
+        sessionStorage.setItem('showNotification', JSON.stringify(!showNotification))
+            setShowNotification(!showNotification)
+            
+    }
     const selectMenuHandler = (e, type, id) => {
         e.stopPropagation();
         /* if(type === 'option') setSelectedMenu({
@@ -39,7 +49,8 @@ const Main = () =>{
 
     const selectedContent=selectedMenu.type === 'link' ? <ForMe/> : <Profile selectedOptionId={selectedMenu.id}/>
     return <div>
-        <Header menu={menu} selectedMenu={selectedMenu} selectMenuHandler={selectMenuHandler} clicked={sideDrawerHandler}/>
+        <Header showNotification={showNotification} menu={menu} selectedMenu={selectedMenu} selectMenuHandler={selectMenuHandler} clicked={sideDrawerHandler}/>
+        <NotificationBar showNotification={showNotification} showNotificationHandler={showNotificationHandler} />
         <SideDrawer show={showSideDrawer} clicked={sideDrawerHandler} selectMenuHandler={selectMenuHandler}/>
         {selectedContent}
         <Footer />
